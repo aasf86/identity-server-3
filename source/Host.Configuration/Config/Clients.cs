@@ -218,20 +218,24 @@ namespace IdentityServer3.Host.Config
                         "http://localhost:21575/callback.html",
                         "http://localhost:21575/frame.html",
                         "http://localhost:21575/popup.html",
-                        "http://localhost:3000/index.html",
-                        "http://localhost:3000/silentRenew"
+                        "http://localhost:3000/callback",
+                        "http://localhost:3000/silentRenew",
+                        "http://10.0.40.71:3000/callback",
+                        "http://10.0.40.71:3000/silentRenew"
                     },
 
                     PostLogoutRedirectUris = new List<string>
                     {
                         "http://localhost:21575/index.html",
-                        "http://localhost:3000/index.html"
+                        "http://localhost:3000/index.html",
+                        "http://10.0.40.71:3000/index.html"
                     },
 
                     AllowedCorsOrigins = new List<string>
                     {
                         "http://localhost:21575",
-                        "http://localhost:3000"
+                        "http://localhost:3000",
+                        "http://10.0.40.71:3000"
                     },
 
                     AccessTokenLifetime = 60,
