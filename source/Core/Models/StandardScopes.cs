@@ -265,11 +265,11 @@ namespace IdentityServer3.Core.Models
                     Name = Constants.StandardScopes.AllClaims,
                     Type = ScopeType.Identity,
                     Emphasize = true,
-                    IncludeAllClaimsForUser = true
+                    IncludeAllClaimsForUser = true                    
                 };
             }
         }
-
+        
         /// <summary>
         /// Gets the "roles" scope.
         /// </summary>

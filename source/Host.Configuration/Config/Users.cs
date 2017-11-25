@@ -52,7 +52,10 @@ namespace IdentityServer3.Host.Config
                         new Claim(Constants.ClaimTypes.Role, "Developer"),
                         new Claim(Constants.ClaimTypes.Role, "Geek"),
                         new Claim(Constants.ClaimTypes.WebSite, "http://bob.com"),
-                        new Claim(Constants.ClaimTypes.Address, @"{ ""street_address"": ""One Hacker Way"", ""locality"": ""Heidelberg"", ""postal_code"": 69118, ""country"": ""Germany"" }", Constants.ClaimValueTypes.Json)
+                        new Claim(Constants.ClaimTypes.Address, @"{ ""street_address"": ""One Hacker Way"", ""locality"": ""Heidelberg"", ""postal_code"": 69118, ""country"": ""Germany"" }", Constants.ClaimValueTypes.Json),
+                        new Claim("edit", "edit"),
+                        new Claim("add", "add"),
+                        new Claim("remove", "remove")
                     }
                 },
             };

@@ -79,6 +79,34 @@ namespace IdentityServer3.Host.Config
                             new ScopeClaim(Constants.ClaimTypes.Name),
                             new ScopeClaim(Constants.ClaimTypes.Role)
                         }
+                    },
+                    new Scope
+                    {
+                        Name = "permission",
+                        DisplayName = "permission",
+                        Type = ScopeType.Identity,
+                        Emphasize = true,
+                        Claims = new List<ScopeClaim>
+                        {
+                            new ScopeClaim
+                            {
+                                AlwaysIncludeInIdToken = true,
+                                Description = "permission.edit",
+                                Name = "edit"
+                            },
+                            new ScopeClaim
+                            {
+                                AlwaysIncludeInIdToken = true,
+                                Description = "permission.add",
+                                Name = "add"
+                            },
+                            new ScopeClaim
+                            {
+                                AlwaysIncludeInIdToken = true,
+                                Description = "permission.remove",
+                                Name = "remove"
+                            }
+                        }
                     }
                 };
         }

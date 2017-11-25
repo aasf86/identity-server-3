@@ -203,7 +203,8 @@ namespace IdentityServer3.Host.Config
                         Constants.StandardScopes.Roles,
                         "read",
                         "write",
-                        Constants.StandardScopes.OfflineAccess
+                        Constants.StandardScopes.OfflineAccess,
+                        "permission"
                     },
 
                     ClientUri = "https://identityserver.io",
